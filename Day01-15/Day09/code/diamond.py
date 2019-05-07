@@ -33,6 +33,7 @@ class E(D):
 
     def foo(self):
         print('foo in E')
+        print(E.mro())
         super().foo()
         super(B, self).foo()
         super(C, self).foo()
